@@ -1,5 +1,8 @@
+<<<<<<< HEAD
 import 'dart:math';
 
+=======
+>>>>>>> origin/master
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 
@@ -15,18 +18,28 @@ class myapp extends StatefulWidget {
 }
 
 class _myappState extends State<myapp> {
+<<<<<<< HEAD
   int leftdice = 1;
   int rightdice = 2;
 
   void dice() {
     leftdice = Random().nextInt(6) + 1;
     rightdice = Random().nextInt(6) + 1;
+=======
+
+  int leftdice=1;
+  int rightdice=2;
+
+  void dice(){
+
+>>>>>>> origin/master
   }
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
+<<<<<<< HEAD
           backgroundColor: Colors.red,
           appBar: AppBar(
             centerTitle: true,
@@ -65,6 +78,34 @@ class _myappState extends State<myapp> {
               ],
             ),
           )),
+=======
+        backgroundColor: Colors.red,
+        appBar: AppBar(
+          centerTitle: true,
+          title: Text("Dice App"),
+          backgroundColor: Colors.red,
+        ),
+        body: Row(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            TextButton(
+                onPressed: () {},
+                child: Image.asset(
+                  'asset/dice1.png',
+                  width: 300,
+                  height: 300,
+                )),
+            TextButton(
+                onPressed: () {},
+                child: Image.asset(
+              'asset/dice2.png',
+              width: 300,
+              height: 300,
+            ))
+          ],
+        )),
+      ),
+>>>>>>> origin/master
     );
   }
 }
